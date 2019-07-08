@@ -1,0 +1,133 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #cav{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <img src="3.jpg" id="img">
+    <canvas id="cav" width="500" height="300"></canvas>
+    <div>冯大愚</div>
+</body>
+<script>
+    // 绘制矩形
+    var can=document.getElementById("cav")
+    // if(can.getContext){
+        var cvs=can.getContext("2d");
+        document.getElementById("img").onmousemove=function(e){
+           var nw=this.width;
+           var nh=this.height;
+           
+        }
+        //绘制直线
+        // cvs.beginPath();
+        // cvs.moveTo(20,280);
+        // cvs.lineTo(20,20);
+        // cvs.stroke();
+        // cvs.closePath();
+
+        // cvs.beginPath();
+        // cvs.moveTo(20,280);
+        // cvs.lineTo(20,20);
+        // cvs.stroke();
+        // cvs.closePath();
+
+
+        //绘制文字
+        // cvs.font="30px 黑体";
+        // cvs.fillStyle="#f00";
+        // cvs.direction="rtl";//文字方向
+        // cvs.fillText("大哈比",200,50);
+        //绘制图片
+        // var img=new Image();
+        // img.src="3.jpg";
+        // img.onload=function(){
+        //     cvs.drawImage(this,0,0,500,300,100,100,0,0,200,200)
+        // }
+
+        //cvs.fillRect(10,10,100,80);//有背景颜色的矩形
+        //cvs.strokeRect(120,10,100,80);//带边框的矩形
+        //cvs.clearRect(30,10,150,80)
+    // }
+
+
+    // var person= new Object();
+    // person.name="土豆";2
+    // person.age=20;
+    // person.sex="男";
+    // person.sayName=function(){
+    //     alert("土豆")
+    // }
+    // person.sayName();
+
+    //工厂模式 
+    // function ps(name,age,sex){
+    //     var person= new Object();
+    //     person.name=name;
+    //     person.age=age;
+    //     person.sex=sex;
+    //     person.sayName=function(){
+    //      alert(name);
+    //     }
+    //      return person;
+    // }
+    // var p1=ps("土豆","18","男");
+    // console.log(p1.name)
+    // console.log(p1.age)
+
+
+//构造函数模式
+    // function person(name,age,sex){
+    //     this.name=name;
+    //     this.age=age;
+    //     this.sex=sex;
+    //     this.sayName=function(){
+    //         alert(this.name)
+    //     }
+    // }
+    // var p1=new person("土豆","20","男");
+    // var p2=new person("大哈比","19","男");
+    // console.log(p1.name)
+    // console.log(p2.name)
+
+    //原型
+    // function person(){}
+    //     person.pototype.name="土豆";
+    //     person.pototype.sayName=function(){
+    //         alert(this.name)
+    //     }
+    //     var p1=new person();
+    //     p1.sayName(); 
+
+    //构造混合模式
+    // function person(name,age){
+    //     this.name=name;
+    //     this.age=age;
+    // }
+    // person.prototype.sayName=function(){
+    //     alert(this.name)
+    // }
+    // var p1=new person("李二哈","18","男")
+    // console.log(p1,)
+
+
+    // var a=[1,2,3,4];
+    // var b=a;
+    // a[0]=5;
+    // console.log(a);//Array(4) [ 5, 2, 3, 4 ]
+    // console.log(b);//Array(4) [ 5, 2, 3, 4 ]
+
+    // var a=1;
+    // var b=a;
+    // a=10;
+    // alert(a);//弹出10
+    // alert(b);//弹出1
+</script>
+</html>
